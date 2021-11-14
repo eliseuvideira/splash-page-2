@@ -1,7 +1,16 @@
 {
   "name": "splash-page",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "0.1.0",
+  "source": "src/index.html",
   "author": "Eliseu Videira <eliseuvideira1@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.0.1",
+    "rimraf": "^3.0.2"
+  },
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "parcel build",
+    "start": "parcel"
+  }
 }
