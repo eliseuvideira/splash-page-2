@@ -4,6 +4,13 @@
     "postcss-uncss": {
       "html": [
         "src/*.html"
+      ],
+      "ignore": [
+        ".fade",
+        ".fade.in",
+        ".collapse",
+        ".collapse.in",
+        ".collapsing"
       ]
     }
   }

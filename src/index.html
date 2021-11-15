@@ -8,10 +8,94 @@
     <link rel="stylesheet" href="styles.scss" />
   </head>
   <body>
-    <div class="container">
-      <div class="bg-primary">
-        <h1 class="display-1 fw-bold">Hello World!</h1>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
+        <div class="container-xl">
+          <a class="navbar-brand" href="#top"> Logo </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-collapse"
+            aria-controls="navbar-collapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#top"> Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#announcement"> Announcement </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#details"> Details </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#newsletter"> Newsletter </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about"> About Us </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero"></section>
+      <section id="announcement"></section>
+      <section id="details"></section>
+      <section id="newsletter"></section>
+      <section id="about"></section>
+    </main>
+
+    <footer class="bg-white pb-1">
+      <div class="container">
+        <div class="row text-center py-4">
+          <div class="col-12 col-sm-6 col-md-4 pt-4">
+            <p class="h4 fw-bold lh-1">Logo</p>
+            <i class="fab fa-discord"></i>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 pt-4">
+            <p class="h4 fw-bold lh-1">Location</p>
+            <small class="text-muted d-block">
+              4423 Green Street
+              <br />
+              Nashville, TN 37201
+            </small>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 pt-4">
+            <p class="h4 fw-bold lh-1">Contact</p>
+            <small class="text-muted">+1 615-534-1283</small>
+            <br />
+            <small class="text-muted">aaronvhansen@dayrep.com</small>
+          </div>
+        </div>
+        <div class="row border-top py-1">
+          <div class="col-12 d-flex align-items-center justify-content-between">
+            <small class="text-muted">&copy; 2021</small>
+            <ul class="list-inline m-0">
+              <li class="list-inline-item">
+                <a href="#" class="text-decoration-none" tabindex="{-1}">
+                  <small class="text-muted"> Terms of Use </small>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-decoration-none" tabindex="{-1}">
+                  <small class="text-muted"> Privacy Policy </small>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
+    </footer>
+
+    <script src="index.js" type="module"></script>
   </body>
 </html>
