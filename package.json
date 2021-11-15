@@ -15,6 +15,7 @@
     "sass": "^1.43.4"
   },
   "scripts": {
+    "dev": "parcel",
     "prebuild": "rimraf dist",
     "build": "parcel build",
     "start": "parcel"
